@@ -15,3 +15,4 @@ if ($t < "10") {
   echo "God natt!";
 }
 ?>
+
