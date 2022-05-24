@@ -1,12 +1,6 @@
-
-<!DOCTYPE HTML>  
-<html>
-<head>
-<link rel="stylesheet"  href="css/style.css">
-</head>
-<body>  
-
 <?php
+
+include("../templates/head.php");
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $passwordrr = $passwordtestrr ="";
 $name = $email = $gender = $comment = $password = $passwordtest ="";
@@ -98,7 +92,9 @@ function test_input($data) {
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
-</form>
+</form> 
+
+
 
 <?php
 echo "<h2>Din Inmatning: </h2>";
@@ -111,7 +107,12 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
+
+include("../templates/foot.php");
+
 ?>
+
+
 
 </body>
 </html>
