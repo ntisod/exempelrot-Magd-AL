@@ -55,10 +55,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       //Ta oss till en annan sida
       header("Location: welcome.php");   
     
-    } catch(PDOException $e) {
-      echo $sql . "<br>" . $e->getMessage();
+    } catch(PDOException $e){
+        echo $sql . "<br>" . $e->getMessage();
     }
+      
+    
   }
+  
 }
 
 function test_input($data) {
